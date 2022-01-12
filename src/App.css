@@ -36,3 +36,142 @@
     transform: rotate(360deg);
   }
 }
+
+#root {
+  width: 100%;
+  height: 100vh;
+}
+
+#app-cover {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#background-header img {
+  width: 100%;
+  height: 187px;
+}
+
+#todo-app__overlay {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  justify-content: center;
+}
+
+#todo-box {
+  position: fixed;
+  top: calc(187px/4);
+  background: transparent;
+  width: 500px;
+}
+
+#todo-app__title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.todo-app__input {
+  display: flex;
+  height: 40px;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  align-items: center;
+  /* flex-direction: column; */
+  margin-bottom: 16px;
+  padding: 8px;
+  justify-content: space-between;
+}
+
+.todo-app__input input {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 60%;
+}
+
+.todo-app__input button {
+  padding: 0px 8px 0px 8px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.todo-app__input button:hover {
+  box-shadow: 1px 1px 3px 1px rgb(190, 188, 188);
+}
+
+.todo-app__list {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-app__list {
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  box-shadow: 1px 1px 5px 1px rgb(207, 205, 205);
+}
+
+.todo-app__list-item {
+  list-style-type: none;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  
+}
+
+.todo-app__list-item:not(:last-child) {
+  border-bottom: 1.5px solid rgb(243, 240, 240);
+}
+
+.todo-app__list-item input {
+  margin-right: 4px;
+}
+
+.list-item__content {
+  display: flex;
+  align-items: center;
+}
+
+.list-item__edit-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-item__edit-field button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.list-item__edit-field button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 576px) {
+  #todo-box {
+    width: 80%;
+  }
+}
+
+@media (max-width: 375px) {
+  
+}
+
+
+
+
