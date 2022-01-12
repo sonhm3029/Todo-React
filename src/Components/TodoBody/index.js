@@ -14,24 +14,10 @@ function TodoBody() {
                     </div>
                     <div className="list-item__edit-field">
                         <button>
-                            <i class="bi bi-trash-fill"></i>
+                            <i className="bi bi-trash-fill"></i>
                         </button>
                         <button>
-                            <i class="bi bi-pencil-fill"></i>
-                        </button>
-                    </div>
-                </li>
-                <li className="todo-app__list-item">
-                    <div className="list-item__content">
-                        <input type="checkbox" />
-                        <label>option</label>
-                    </div>
-                    <div className="list-item__edit-field">
-                        <button>
-                            <i class="bi bi-trash-fill"></i>
-                        </button>
-                        <button>
-                            <i class="bi bi-pencil-fill"></i>
+                            <i className="bi bi-pencil-fill"></i>
                         </button>
                     </div>
                 </li>
@@ -42,10 +28,24 @@ function TodoBody() {
                     </div>
                     <div className="list-item__edit-field">
                         <button>
-                            <i class="bi bi-trash-fill"></i>
+                            <i className="bi bi-trash-fill"></i>
                         </button>
                         <button>
-                            <i class="bi bi-pencil-fill"></i>
+                            <i className="bi bi-pencil-fill"></i>
+                        </button>
+                    </div>
+                </li>
+                <li className="todo-app__list-item">
+                    <div className="list-item__content">
+                        <input type="checkbox" />
+                        <label>option</label>
+                    </div>
+                    <div className="list-item__edit-field">
+                        <button>
+                            <i className="bi bi-trash-fill"></i>
+                        </button>
+                        <button>
+                            <i className="bi bi-pencil-fill"></i>
                         </button>
                     </div>
                 </li>
