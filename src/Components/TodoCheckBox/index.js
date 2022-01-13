@@ -1,5 +1,4 @@
 import styles from './TodoCheckBox.module.css';
-import clsx from 'clsx';
 
 function TodoCheckBox() {
     return (
