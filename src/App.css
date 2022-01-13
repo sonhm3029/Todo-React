@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -63,10 +67,11 @@
 }
 
 #todo-box {
-  position: fixed;
+  position: absolute;
   top: calc(187px/4);
   background: transparent;
   width: 500px;
+  padding-bottom: 100px;
 }
 
 #todo-app__title {
@@ -146,6 +151,20 @@
   align-items: center;
 }
 
+.list-item__content input:checked ~ label {
+  text-decoration: line-through;
+  color: rgb(223, 219, 219);
+}
+
+.fake-checkbox{
+  opacity: 0;
+}
+
+.fake-checkbox:checked ~label {
+  text-decoration: line-through;
+  color: rgb(223, 219, 219);
+}
+
 .list-item__edit-field {
   display: flex;
   justify-content: center;
@@ -160,6 +179,33 @@
 
 .list-item__edit-field button:hover {
   transform: scale(1.1);
+}
+
+.todo-status__empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+#todo-app__footer {
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+  justify-content: space-between;
+  padding: 8px 16px 8px 16px;
+  box-shadow: 1px 1px 20px 5px rgb(228, 225, 225);
+  font-weight: 700;
+  color: rgb(139, 139, 139);  
+}
+
+#todo-app__footer .footer__item {
+  cursor: pointer;
+}
+
+#todo-app__footer .footer__item:hover {
+  cursor: pointer;
+  color: hsl(220, 98%, 61%);
 }
 
 @media (max-width: 576px) {

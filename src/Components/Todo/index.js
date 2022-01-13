@@ -2,6 +2,7 @@ import TodoTitle from "../TodoTitle";
 import TodoSpinner from "../TodoSpinner";
 import TodoBox from "../TodoBox";
 import TodoBody from "../TodoBody";
+import TodoFooter from "../TodoFooter";
 
 function Todo() {
     return (
@@ -9,6 +10,7 @@ function Todo() {
           <TodoBox>
             <TodoTitle />
             <TodoBody/>
+            <TodoFooter />
           </TodoBox>
         </div>
     )
