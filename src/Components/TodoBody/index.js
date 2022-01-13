@@ -22,7 +22,7 @@ function TodoBody() {
 
     const handleSaveWork = ()=> {
         setTodoList(pre => {
-            if(work !='') {
+            if(work !=='') {
                 const newList = [...pre,work];
                     localStorage.setItem('todo', JSON.stringify(newList));
                 return newList;
@@ -106,7 +106,7 @@ function TodoBody() {
                                 <TodoCheckBox
                                 />
                                 <label>
-                                    {(toggleBtn&&editItem == index)?inputField.current.value:work}
+                                    {(toggleBtn&&editItem === index)?inputField.current.value:work}
                                 </label>
                             </div>
                             <div className="list-item__edit-field">
