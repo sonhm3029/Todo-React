@@ -86,7 +86,7 @@ function TodoBody() {
                         ref={saveChangedBtn}
                         onClick={handleChangedWork}
                     >
-                        Confirm changed
+                        confirm
                     </button>):
                     (<button
                         ref={saveButton}
