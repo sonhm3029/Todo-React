@@ -1,14 +1,16 @@
 import {
     useState,
     useRef,
+    useContext
 } from 'react';
 import TodoEmpty from '../TodoEmpty';
 import TodoCheckBox from '../TodoCheckBox';
-
+import {themeContext} from '../Context';
 
 
 function TodoBody() {
 
+    const toggleTheme = useContext(themeContext);
     const [work, setWork] = useState("");
     const [todoList, setTodoList] = useState(()=> {
         return JSON.parse(localStorage.getItem('todo')) ?? [];
@@ -73,7 +75,8 @@ function TodoBody() {
 
     return (
         <div id='todo-app__body'>
-            <div className="todo-app__input">
+            <div
+                className={"todo-app__input" + (toggleTheme?" app-theme-body__dark":" app-theme-body__light")}>
                 <input
                     ref={inputField}
                     value={work}
@@ -96,7 +99,7 @@ function TodoBody() {
                     </button>)
                 }
             </div>
-            <ul className="todo-app__list">
+            <ul className={"todo-app__list" + (toggleTheme?" app-theme-body__dark":" app-theme-body__light")}>
             {
                 (todoList.length >=1)?
                 todoList.map((work, index) => {

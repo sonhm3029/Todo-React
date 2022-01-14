@@ -28,7 +28,7 @@
     left: 0;
     height: 20px;
     width: 20px;
-    background-color: white;
+    background-color: inherit;
     border-radius: 50%;
     border: 1px solid rgb(212, 209, 209);
   }

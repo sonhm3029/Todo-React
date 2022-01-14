@@ -1,9 +1,17 @@
 // import headerImg from ''
-import {useState, useEffect} from 'react';
+import {
+    useState,
+    useEffect,
+    useContext
+} from 'react';
+
+import {themeContext} from '../Context';
 
 function Header() {
-    const imgDesktop = 'img/bg-desktop-light.jpg';
-    const imgMobile = 'img/bg-mobile-light.jpg';
+
+    const toggleTheme = useContext(themeContext);
+    const imgDesktop = toggleTheme?'img/bg-desktop-dark.jpg':'img/bg-desktop-light.jpg';
+    const imgMobile = toggleTheme?'img/bg-mobile-dark.jpg':'img/bg-mobile-light.jpg';
 
     const [changeImg, setChangeImg] = useState(false);
 
